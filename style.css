@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1a1a1a;
+    color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    background: #2f2f2f;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    box-shadow: 0 4px 10px rgba(244, 150, 150, 0.3);
+}
+
+header h1{
+    font-size: 20px;
+}
+
+nav a{
+    color: #f4f4f4;
+    margin:4px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color:#00bfff;
+    transform: scale(1.1);
+    transition: 3ms ease-in-out;
+}
+
+section{
+    padding:60px 20px;
+    margin:auto;
+    max-width:800px;
+    text-align: center;;
+}
+
+.profile-img{
+    width:120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #00bfff;
+    box-shadow:0 4px 10px rgba(236, 4, 4, 0.817);
+}
+
+.project-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(244, 150, 150, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+}
+
+.project-card a{
+    color:#00bfff;
+    text-decoration: none;
+}
+
+.project-card a:hover{
+    color: red;
+}
+
+.links a{
+    text-decoration: none;
+    margin:0 10px;
+    color:#00bfff;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer{
+    background: #111;
+    text-align: center;
+    padding:15px;
+    font-size: 14px;
+}
+
+.Message-form{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Message-form input,
+.Message-form textarea{
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #2f2f2f;
+    color:#f4f4f4;
+    box-shadow: 0 4px 10px rgba(230, 52, 52, 0.817);
+}
+
+.btn{
+    background-color:#00bfff;
+    padding: 10px 25px;
+    border-radius: 40px;
+    color:white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+
+.btn:hover{
+    background-color: #ee4447;
+}
+
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+    }
+
+    .project-list{
+        align-items: center;
+    }
+
+    .Message-form input,
+    .Message-form textarea{
+        width:60%;
+    }
+
+    .btn{
+        padding: 9px 10px;
+        margin: 20px;
+    }
+}
